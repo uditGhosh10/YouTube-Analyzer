@@ -1,8 +1,8 @@
 from youtubeStat import YT
 import streamlit
 @streamlit.cache
-def m(id):
-	API_KEY= 'AIzaSyBEEjAFGOKIn5gj_0D8Gp8OkylF4VW8mx8' #Enter your own youtube api
+def m(id, key):
+	API_KEY= key #Enter your own youtube api
 	channelID=id
 	# channelID= 'UChDkP71cJOHop-iRgl_8pVg'
 	yt = YT(API_KEY, channelID)
