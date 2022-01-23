@@ -48,7 +48,7 @@ st.markdown("<h1 style='text-align: center; color: white;'>Analyzing your favour
 id = st.text_input('Enter the ChannelID')
 # @st.cache
 if len(id):
-	m(id)
+	m(id, st.secrets["db_username"])
 	# st.info('DataSet Loaded !!')
 
 	# st.header("This is out homepage")
