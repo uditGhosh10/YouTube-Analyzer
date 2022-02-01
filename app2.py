@@ -28,7 +28,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.sidebar.markdown("<h1 style='text-align: center; color: white;'>YouTube Analyzer</h1>", unsafe_allow_html=True)
 # st.sidebar.write("This is a webapp built on Streamlit to perform analysis of any youtube channel. On the backend, the app uses the YouTube API to get the channel statistics in JSON format, and then it generates relevent graphs using the seaborn and matplotlib library.")
-st.sidebar.markdown("<p style='text-align: center; color: grey;'>This is a webapp built on Streamlit to perform analysis of any youtube channel. On the backend, the app uses the YpouTube API to get the channel statistics in JSON format, and then it generates relevent graphs using the seaborn and matplotlib library.</p>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='text-align: center; color: grey;'>This is a webapp built on Streamlit to perform analysis of any youtube channel. On the backend, the app uses the YouTube API to get the channel statistics in JSON format, and then it generates relevent graphs using the seaborn and matplotlib library.</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<p style='text-align: left; color: white;'>Stack Used</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<li style='text-align: left; color: grey;'>Python</li>", unsafe_allow_html=True)
 st.sidebar.markdown("<li style='text-align: left; color: grey;'>StreamLit</li>", unsafe_allow_html=True)
