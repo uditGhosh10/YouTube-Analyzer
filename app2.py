@@ -27,7 +27,7 @@ def human_format(number):
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.sidebar.markdown("<h1 style='text-align: center; color: white;'>YouTube Analyzer</h1>", unsafe_allow_html=True)
-# st.sidebar.write("This is a webapp built on Streamlit to perform analysis of any youtube channel. On the backend, the app uses the YpouTube API to get the channel statistics in JSON format, and then it generates relevent graphs using the seaborn and matplotlib library.")
+# st.sidebar.write("This is a webapp built on Streamlit to perform analysis of any youtube channel. On the backend, the app uses the YouTube API to get the channel statistics in JSON format, and then it generates relevent graphs using the seaborn and matplotlib library.")
 st.sidebar.markdown("<p style='text-align: center; color: grey;'>This is a webapp built on Streamlit to perform analysis of any youtube channel. On the backend, the app uses the YpouTube API to get the channel statistics in JSON format, and then it generates relevent graphs using the seaborn and matplotlib library.</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<p style='text-align: left; color: white;'>Stack Used</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<li style='text-align: left; color: grey;'>Python</li>", unsafe_allow_html=True)
@@ -106,7 +106,7 @@ h1.a {{
 	labels =['0-20 min.','20-40 min.' , '40-60 min.', '60-80 min.', '80-100 min.', '>100 min.']
 	df['span'] = pd.cut(df['duration'], bins,labels=labels)
 
-	df['Percentage of Likes/View']=df['views']/df['likes']
+	df['Percentage of Likes/View']=df['likes']/df['view']
 	y=df.groupby(["span"])
 
 	# z=df.groupby(['year','month']).size()
@@ -151,7 +151,7 @@ h1.a {{
 		st.subheader("Some interesting Figures from the Channel !!")
 		with st.expander("Reveal the most viewed video of the channel"):
 			st.info(df.loc[0]['Title'])
-		with st.expander("Reveal the like/view ratio"):
+		with st.expander("Reveal the average like ratio"):
 			st.info(str(sum(df.likes)/len(df)))
 		with st.expander("Reveal the most liked video of the channel"):
 			st.info(df[df['likes']==df['likes'].max()]['Title'][0])
