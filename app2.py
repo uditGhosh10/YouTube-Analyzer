@@ -106,7 +106,7 @@ h1.a {{
 	labels =['0-20 min.','20-40 min.' , '40-60 min.', '60-80 min.', '80-100 min.', '>100 min.']
 	df['span'] = pd.cut(df['duration'], bins,labels=labels)
 
-	df['Percentage of Likes/View']=df['likes']/df['view']
+	df['Percentage of Likes/View']=df['likes']/df['views']
 	y=df.groupby(["span"])
 
 	# z=df.groupby(['year','month']).size()
