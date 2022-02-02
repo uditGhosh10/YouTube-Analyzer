@@ -6,4 +6,4 @@ This is how a youtubeChannel URL looks. The expression after 'channel/' is your 
       "https://www.youtube.com/channel/UCMRlJWmG6i7LP3TMSGpZVfw", 
 'UCMRlJWmG6i7LP3TMSGpZVfw' is the channel ID
 
-Try it  at: 
+Try it  at: https://share.streamlit.io/uditghosh10/youtube-analyzer/main/app2.py
